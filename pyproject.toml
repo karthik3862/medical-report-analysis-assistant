@@ -1,0 +1,25 @@
+[project]
+name = "medical-report-analysis-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Karthik", email = "karthikkatineedi@gmail.com" }
+]
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "langchain>=1.4.2",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.6.5",
+    "langchain-xai>=1.3.0",
+    "pydantic>=2.13.5",
+    "pymupdf>=1.28.2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+medical-report-analysis-assistant = "medical_report_analysis_assistant:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
